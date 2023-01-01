@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devwider.fx.calculator.controller.CalculatorController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+       <TextField fx:id="display" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onClick" text="0" GridPane.rowIndex="4" />
+             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onClick" text="1" GridPane.rowIndex="3" />
+             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onClick" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onClick" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onCalculate" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onCalculate" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onCalculate" text="*" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onReset" snapToPixel="false" text="AC" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onCalculate" text="\%" GridPane.columnIndex="2" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onCalculate" text="-/+" GridPane.columnIndex="1" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onCalculate" text="/" GridPane.columnIndex="3" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onBack" text="&lt;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onCalculate" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onClick" text="." GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onClick" text="4" GridPane.rowIndex="2" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onClick" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onClick" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onClick" text="7" GridPane.rowIndex="1" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onClick" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onClick" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</VBox>
