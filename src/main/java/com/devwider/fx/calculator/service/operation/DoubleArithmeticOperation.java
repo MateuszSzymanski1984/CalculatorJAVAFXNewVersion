@@ -22,13 +22,14 @@ public enum DoubleArithmeticOperation implements IArithmeticOperation<Double> {
             return a * b;
         }
     },
-
+     DIVISION("/") {
+         @Override
+         public Double calculate(Double a , Double b) { return a / b;}
+     },
 
     NON("") {
         @Override
-        public Double calculate(Double a, Double b) {
-            return 0.0;
-        }
+        public Double calculate(Double a, Double b) {return 0.0;};
     };
 
     private final String op;
